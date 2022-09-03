@@ -1,9 +1,4 @@
 {
-  "United States": 331893745,
-  "Northeast Region": 57159838,
-  "Midwest Region": 68841444,
-  "South Region": 127225329,
-  "West Region": 78667134,
   "Alabama": 5039877,
   "Alaska": 732673,
   "Arizona": 7276316,
@@ -12,7 +7,7 @@
   "Colorado": 5812069,
   "Connecticut": 3605597,
   "Delaware": 1003384,
-  "District of Columbia": 670050,
+  "D.C.": 670050,
   "Florida": 21781128,
   "Georgia": 10799566,
   "Hawaii": 1441553,

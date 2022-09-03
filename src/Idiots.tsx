@@ -12,7 +12,7 @@ type CaseStatus =
 type Jurisdiction = 'Federal' | 'DC' | 'Federal and DC';
 type YesNo = 'Y' | 'N';
 
-type Idiot = {
+export type Idiot = {
   age: number;
   case_status: CaseStatus;
   case_updates: string;
@@ -72,16 +72,22 @@ const fields: Field[] = [
     prop: 'jurisdiction',
     label: 'Jusrisdiction',
   },
+  {
+    prop: 'charges_link',
+    label: 'Link',
+  },
 ];
 
 export const Idiots = () => (
   <table>
     <thead>
-      {fields.map(({ label }) => (
-        <th align="left" key={label}>
-          {label}
-        </th>
-      ))}
+      <tr>
+        {fields.map(({ label }) => (
+          <th align="left" key={label}>
+            {label}
+          </th>
+        ))}
+      </tr>
     </thead>
     <tbody>
       {(idiots as Idiot[])
@@ -89,7 +95,9 @@ export const Idiots = () => (
         .map(idiot => (
           <tr key={`${idiot.first}-${idiot.last}-${idiot.charges_link}`}>
             {fields.map(({ prop }) => (
-              <td key={prop}>{idiot[prop] || '--'}</td>
+              <td key={prop} style={{ whiteSpace: 'nowrap' }}>
+                {idiot[prop] || '--'}
+              </td>
             ))}
           </tr>
         ))}
