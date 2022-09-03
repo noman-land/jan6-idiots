@@ -2,6 +2,8 @@
 
 Visualizing who they are.
 
+Data comes from here: https://apps.npr.org/dailygraphics/graphics/capitol-riot-table-20210204/table.html
+
 ## Development
 
 ### `yarn start`
