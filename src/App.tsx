@@ -1,6 +1,6 @@
 import { AgeBreakdown } from './AgeBreakdown';
 import './App.css';
-import { Idiots } from './Idiots';
+import { Idiots } from './idiots/Idiots';
 import { States } from './States';
 
 function App() {

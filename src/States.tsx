@@ -1,4 +1,4 @@
-import { Idiot } from './Idiots';
+import { Idiot } from './idiots/IdiotTypes';
 import idiots from './json/idiots.json';
 import statePopulations from './json/state-populations.json';
 
