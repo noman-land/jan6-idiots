@@ -24,8 +24,8 @@ export type Idiot = {
   charges_link: string;
   city: string;
   conspiracy: YesNo;
-  first: string;
   extremist: YesNo;
+  first: string;
   inspired_trump: YesNo;
   jurisdiction: Jurisdiction;
   last: string;
@@ -35,16 +35,16 @@ export type Idiot = {
   photo_name: string;
   property: YesNo;
   publish: YesNo;
-  summary: string;
   state: State;
+  summary: string;
   theft: YesNo;
   updated: YesNo;
   violence_assault: YesNo;
 };
 
 type Field = {
-  prop: keyof Idiot;
   label: string;
+  prop: keyof Idiot;
 };
 
 const fields: Field[] = [
